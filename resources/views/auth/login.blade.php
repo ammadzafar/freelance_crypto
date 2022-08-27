@@ -59,6 +59,15 @@
         *************************************-->
     </div>
 @endsection
+@section('script')
+    <script>
+        $(document).ready(function() {
+            @if(session()->has('message'))
+            toastr.success("{{ session()->get('message') }}");
+            @endif
+        });
+    </script>
+@endsection
 
 
 

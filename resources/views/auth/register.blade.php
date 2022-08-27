@@ -12,7 +12,7 @@
 						<img src="{{asset('assets/images/logo.svg')}}" alt="logo">
 					</span>
                 </strong>
-                <form class="rt-formtheme" method="POST" action="{{ route('register') }}">
+                <form class="rt-formtheme" method="POST" action="{{ route('register.user') }}">
                     @csrf
                     <fieldset>
                         <legend>Sign Up <span>Please fill in the required information </span></legend>
